@@ -1,0 +1,25 @@
+<!-- Liste d'objects -->
+<home>
+	<items>
+		<item id="lamp1">
+			<name></name>
+			<iconPath></iconPath>
+			<stuff></stuff>
+			<actions>
+				<action comande="on" state="icon-on"/>
+				<action comande="off" state="icon-off"/>
+				<action comande="default" state="icon-off"/>	<!-- Metter un default obligatoirement ? -->
+			</actions>
+		</item>
+		<item id="">
+			<name></name>
+			<iconPath></iconPath>
+			<stuff></stuff>
+			<actions>
+				<action comande="" state=""/>
+				<action comande="" state=""/>
+				<action comande="" state=""/>
+			</actions>
+		</item>	
+	</items>
+</home>
