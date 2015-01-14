@@ -2,24 +2,46 @@
 <home>
 	<items>
 		<item id="lamp1">
-			<name></name>
+			<name>Lampe</name>
 			<iconPath></iconPath>
-			<stuff></stuff>
+			<stuff>Lamp</stuff>
 			<actions>
-				<action comande="on" state="icon-on"/>
-				<action comande="off" state="icon-off"/>
-				<action comande="default" state="icon-off"/>	<!-- Metter un default obligatoirement ? -->
+				<action order="on" link="icon-on.jpg"/>
+				<action order="off" link="icon-off.jpg"/>
+				<action order="default" link="icon-off.jpg"/>	<!-- Mettre un default obligatoirement ? -->
 			</actions>
 		</item>
-		<item id="">
-			<name></name>
+		<item id="Volume">
+			<name>Volume</name>
 			<iconPath></iconPath>
-			<stuff></stuff>
+			<stuff>Speaker</stuff>
 			<actions>
-				<action comande="" state=""/>
-				<action comande="" state=""/>
-				<action comande="" state=""/>
+				<action order="mute" link="volume_0"/>
+				<action order="middle" link="volume_1"/>
+				<action order="max" link="volume_2"/>
+				<action order="default" link="volume_2"/>
 			</actions>
-		</item>	
+		</item>
+		<item id="Television">
+			<name>Television</name>
+			<iconPath></iconPath>
+			<stuff>Tv</stuff>
+			<actions>
+				<action order="on" link=""/>
+				<action order="off" link=""/>
+				<action order="default" link=""/>
+			</actions>
+		</item>
+		<item id="Chauffage">
+			<name>Chauffage</name>
+			<iconPath></iconPath>
+			<stuff>Heating</stuff>
+			<actions>
+				<action order="" link=""/>
+				<action order="" link=""/>
+				<action order="" link=""/>
+			</actions>
+		</item>
+		
 	</items>
 </home>

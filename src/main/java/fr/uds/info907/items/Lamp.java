@@ -15,10 +15,10 @@ public class Lamp extends AbstractItem {
 	}
 
 	@Override
-	public void proceedComand(String comande) {
-		String iconPath = this.getStateIcons().get(comande);
+	public void proceedComand(String command) {
+		String iconPath = this.getStateIcons().get(command);
 		if(iconPath!=null){
-			this.view.changeImageIcon(this.getStateIcons().get(comande));
+			this.view.changeImageIcon(this.getStateIcons().get(command));
 		}
 		else{
 			System.err.println("COMMANDE INVALIDE");
