@@ -16,10 +16,10 @@
 			<iconPath></iconPath>
 			<stuff>Speaker</stuff>
 			<actions>
-				<action order="mute" link="volume_0"/>
-				<action order="middle" link="volume_1"/>
-				<action order="max" link="volume_2"/>
-				<action order="default" link="volume_2"/>
+				<action order="mute" link="volume_0.png"/>
+				<action order="middle" link="volume_1.png"/>
+				<action order="max" link="volume_2.png"/>
+				<action order="default" link="volume_2.png"/>
 			</actions>
 		</item>
 		<item id="Television">
@@ -27,9 +27,9 @@
 			<iconPath></iconPath>
 			<stuff>Tv</stuff>
 			<actions>
-				<action order="on" link=""/>
-				<action order="off" link=""/>
-				<action order="default" link=""/>
+				<action order="on" link="tv_on.jpg"/>
+				<action order="off" link="tv_off.jpg"/>
+				<action order="default" link="tv_off.jpg"/>
 			</actions>
 		</item>
 		<item id="Chauffage">
@@ -37,7 +37,7 @@
 			<iconPath></iconPath>
 			<stuff>Heating</stuff>
 			<actions>
-				<action order="" link=""/>
+				<action order="default" link="tv_on.jpg"/>
 				<action order="" link=""/>
 				<action order="" link=""/>
 			</actions>

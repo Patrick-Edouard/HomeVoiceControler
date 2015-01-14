@@ -10,7 +10,7 @@ public class Lamp extends AbstractItem {
 	}
 
 	public void run() {
-		view = new LampView("lamp", this.getStateIcons().get(AbstractItem.DEFAULT_STATE));	
+		view = new LampView("lamp", this.getStateIcons().get(AbstractItem.DEFAULT_STATE));
 		
 	}
 

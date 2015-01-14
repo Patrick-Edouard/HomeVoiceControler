@@ -1,6 +1,6 @@
 package fr.uds.info907.items;
 
-import fr.uds.info907.view.LampView;
+import fr.uds.info907.view.GenericItemView;
 
 public class Heating extends AbstractItem{
 	
@@ -9,7 +9,7 @@ public Heating(){
 	}
 
 	public void run() {
-		//view = new LampView("lamp", this.getStateIcons().get(AbstractItem.DEFAULT_STATE));	
+		view = new GenericItemView("Heating", this.getStateIcons().get(AbstractItem.DEFAULT_STATE));	
 		
 	}
 

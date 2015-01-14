@@ -30,41 +30,41 @@ public class ItemFactory {
 				
 				Map<String, String> states = new HashMap<String, String>();
 				
-				for(Element xmlAction : xmlItem.getChildren("actions")){					
+				for(Element xmlAction : xmlItem.getChild("actions").getChildren("action")){	
 					states.put(xmlAction.getAttributeValue("order"), xmlAction.getAttributeValue("link"));
 				}
 				
 				
-				if(xmlItem.getAttribute("stuff").getValue() == "Lamp")
+				if(xmlItem.getChild("stuff").getValue().equals("Lamp"))
 				{
 					AbstractItem lamp = new Lamp();
 					lamp.setStateIcons(states);
-					lamp.setName(xmlItem.getAttributeValue("name"));
+					lamp.setName(xmlItem.getAttributeValue("id"));
 					items.put(lamp.getName(), lamp);
 				}
 				
 				
-				if(xmlItem.getAttribute("stuff").getValue() == "Speaker")
+				else if(xmlItem.getChild("stuff").getValue().equals("Speaker"))
 				{
 					AbstractItem speaker = new Speaker();
 					speaker.setStateIcons(states);
-					speaker.setName(xmlItem.getAttributeValue("name"));
+					speaker.setName(xmlItem.getAttributeValue("id"));
 					items.put(speaker.getName(), speaker);
 				}
 				
-				if(xmlItem.getAttribute("stuff").getValue() == "Tv")
+				else if(xmlItem.getChild("stuff").getValue().equals("Tv"))
 				{
 					AbstractItem tv = new Tv();
 					tv.setStateIcons(states);
-					tv.setName(xmlItem.getAttributeValue("name"));
+					tv.setName(xmlItem.getAttributeValue("id"));
 					items.put(tv.getName(), tv);
 				}
 				
-				if(xmlItem.getAttribute("stuff").getValue() == "Heating")
+				else if(xmlItem.getChild("stuff").getValue().equals("Heating"))
 				{
 					AbstractItem heat = new Heating();
 					heat.setStateIcons(states);
-					heat.setName(xmlItem.getAttributeValue("name"));
+					heat.setName(xmlItem.getAttributeValue("id"));
 					items.put(heat.getName(), heat);
 				}
 				
@@ -100,7 +100,6 @@ public class ItemFactory {
 				items.put(lamp.getName(),lamp);
 				
 		*/
-
 		return items;
 	}
 }
