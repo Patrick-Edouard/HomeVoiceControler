@@ -11,14 +11,29 @@
 				<action order="default" link="icon-off.jpg"/>	<!-- Mettre un default obligatoirement ? -->
 			</actions>
 		</item>
-		<item id="Volume">
+		<item id="speaker-right">
 			<name>Volume</name>
 			<iconPath></iconPath>
-			<stuff>Speaker</stuff>
+			<stuff volume-max="2" volume-min="0">Speaker</stuff>
 			<actions>
 				<action order="mute" link="volume_0.png"/>
 				<action order="middle" link="volume_1.png"/>
 				<action order="max" link="volume_2.png"/>
+				<action order="volume up" link="volume_x.png"/>
+				<action order="volume down" link="volume_x.png"/>
+				<action order="default" link="volume_2.png"/>
+			</actions>
+		</item>
+		<item id="speaker-left">
+			<name>Volume</name>
+			<iconPath></iconPath>
+			<stuff volume-max="2" volume-min="0">Speaker</stuff>
+			<actions>
+				<action order="mute" link="volume_0.png"/>
+				<action order="middle" link="volume_1.png"/>
+				<action order="max" link="volume_2.png"/>
+				<action order="volume up" link="volume_x.png"/>
+				<action order="volume down" link="volume_x.png"/>
 				<action order="default" link="volume_2.png"/>
 			</actions>
 		</item>
@@ -37,7 +52,7 @@
 			<iconPath></iconPath>
 			<stuff>Heating</stuff>
 			<actions>
-				<action order="default" link="tv_on.jpg"/>
+				<action order="default" link="heating_off.jpg"/>
 				<action order="" link=""/>
 				<action order="" link=""/>
 			</actions>

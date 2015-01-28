@@ -2,9 +2,7 @@ package fr.uds.info907.items;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.jdom2.Element;
@@ -47,6 +45,7 @@ public class ItemFactory {
 				else if(xmlItem.getChild("stuff").getValue().equals("Speaker"))
 				{
 					AbstractItem speaker = new Speaker();
+					((Speaker)speaker).setVolumeMax(Integer.parseInt(xmlItem.getChild("stuff").getAttributeValue("volume-max")));
 					speaker.setStateIcons(states);
 					speaker.setName(xmlItem.getAttributeValue("id"));
 					items.put(speaker.getName(), speaker);
