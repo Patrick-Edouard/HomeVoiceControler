@@ -16,5 +16,4 @@ public class STDINControler {
 		scanner.close();
 	}
 	
-	
 }
