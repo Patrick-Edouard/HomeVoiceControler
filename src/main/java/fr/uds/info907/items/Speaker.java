@@ -5,9 +5,9 @@ import fr.uds.info907.view.GenericItemView;
 
 public class Speaker extends AbstractItem{
 	
-	private int volumeMax =0;
-	private int volumeMin=0;
-	private int volumeCourant=0;
+	private int volumeMax = 0;
+	private int volumeMin = 0;
+	private int volumeCourant = 2;
 	
 	public Speaker(){
 		
@@ -30,7 +30,7 @@ public class Speaker extends AbstractItem{
 			else if(command.startsWith("down","volume ".length())){
 				this.volumeDown();
 			}
-			System.out.println("[coucou]"+this.getStateIcons().get(command));
+			System.out.println("[Speaker]"+this.getStateIcons().get(command));
 			this.view.changeImageIcon(this.getStateIcons().get(command).replaceFirst("x", volumeCourant+""));
 		}
 		else{

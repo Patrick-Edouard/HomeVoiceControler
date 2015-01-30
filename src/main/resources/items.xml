@@ -1,17 +1,17 @@
 <!-- Liste d'objects -->
 <home>
 	<items>
-		<item id="lamp1">
+		<item id="Lampe">
 			<name>Lampe</name>
 			<iconPath></iconPath>
 			<stuff>Lamp</stuff>
 			<actions>
-				<action order="on" link="icon-on.jpg"/>
-				<action order="off" link="icon-off.jpg"/>
-				<action order="default" link="icon-off.jpg"/>	<!-- Mettre un default obligatoirement ? -->
+				<action order="switch on" link="lamp-on.jpg"/>
+				<action order="switch off" link="lamp-off.jpg"/>
+				<action order="default" link="lamp-off.jpg"/>	<!-- Mettre un default obligatoirement ? -->
 			</actions>
 		</item>
-		<item id="speaker-right">
+		<item id="Speaker-right">
 			<name>Volume</name>
 			<iconPath></iconPath>
 			<stuff volume-max="2" volume-min="0">Speaker</stuff>
@@ -24,7 +24,7 @@
 				<action order="default" link="volume_2.png"/>
 			</actions>
 		</item>
-		<item id="speaker-left">
+		<item id="Speaker-left">
 			<name>Volume</name>
 			<iconPath></iconPath>
 			<stuff volume-max="2" volume-min="0">Speaker</stuff>
@@ -42,8 +42,8 @@
 			<iconPath></iconPath>
 			<stuff>Tv</stuff>
 			<actions>
-				<action order="on" link="tv_on.jpg"/>
-				<action order="off" link="tv_off.jpg"/>
+				<action order="switch on" link="tv_on.jpg"/>
+				<action order="switch off" link="tv_off.jpg"/>
 				<action order="default" link="tv_off.jpg"/>
 			</actions>
 		</item>
@@ -52,9 +52,9 @@
 			<iconPath></iconPath>
 			<stuff>Heating</stuff>
 			<actions>
-				<action order="default" link="heating_off.jpg"/>
-				<action order="" link=""/>
-				<action order="" link=""/>
+				<action order="default" link="heating_20.jpg"/>
+				<action order="heating up" link="heating_x.jpg"/>
+				<action order="heating down" link="heating_x.jpg"/>
 			</actions>
 		</item>
 		

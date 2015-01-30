@@ -33,6 +33,12 @@ public class Home {
 	
 	public void proceedComande(String order){
 		String itemName = order.substring(0, order.indexOf(" "));
-		items.get(itemName).proceedComand(order.substring(itemName.length()+1, order.length()));
+		try{
+			items.get(itemName).proceedComand(order.substring(itemName.length()+1, order.length()));
+		}
+		catch (NullPointerException ex){
+			System.err.println("Item inconnu : "+itemName);
+		}
+		
 	}
 }

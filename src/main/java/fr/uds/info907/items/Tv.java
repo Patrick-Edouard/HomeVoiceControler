@@ -4,6 +4,8 @@ import fr.uds.info907.view.GenericItemView;
 
 public class Tv extends AbstractItem{
 	
+	private String current_state = "off";
+	
 public Tv(){
 		
 	}
@@ -16,7 +18,11 @@ public Tv(){
 	@Override
 	public void proceedComand(String command) {
 		String iconPath = this.getStateIcons().get(command);
-		if(iconPath!=null){
+		if(command.startsWith("switch")){
+			if(command.startsWith("on","switch ".length()) || command.startsWith("off","switch ".length())){
+				this.changeCurrentState();
+			}
+			System.out.println("[TV]"+this.getStateIcons().get(command));
 			this.view.changeImageIcon(this.getStateIcons().get(command));
 		}
 		else{
@@ -24,4 +30,20 @@ public Tv(){
 		}
 	}
 
+	private void changeCurrentState(){
+		if(getCurrentSate().equals("off")){
+			this.setCurrentState("on");
+		}
+		else if(getCurrentSate().equals("on")){
+			this.setCurrentState("off");
+		}
+	}
+
+	public String getCurrentSate() {
+		return this.current_state;
+	}
+
+	public void setCurrentState(String current_state) {
+		this.current_state = current_state;
+	}
 }
