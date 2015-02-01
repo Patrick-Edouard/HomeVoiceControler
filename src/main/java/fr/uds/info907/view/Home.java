@@ -32,6 +32,7 @@ public class Home {
 	}
 	
 	public void proceedComande(String order){
+		if(order.indexOf(" ")==-1) return;
 		String itemName = order.substring(0, order.indexOf(" "));
 		try{
 			items.get(itemName).proceedComand(order.substring(itemName.length()+1, order.length()));

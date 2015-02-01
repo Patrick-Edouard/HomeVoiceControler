@@ -1,8 +1,8 @@
 <!-- Liste d'objects -->
 <home>
 	<items>
-		<item id="Lampe">
-			<name>Lampe</name>
+		<item id="Lamp">
+			<name>Lamp</name>
 			<iconPath></iconPath>
 			<stuff>Lamp</stuff>
 			<actions>
@@ -37,8 +37,8 @@
 				<action order="default" link="volume_2.png"/>
 			</actions>
 		</item>
-		<item id="Television">
-			<name>Television</name>
+		<item id="Tv">
+			<name>Tv</name>
 			<iconPath></iconPath>
 			<stuff>Tv</stuff>
 			<actions>
@@ -47,12 +47,12 @@
 				<action order="default" link="tv_off.jpg"/>
 			</actions>
 		</item>
-		<item id="Chauffage">
-			<name>Chauffage</name>
+		<item id="Heating">
+			<name>Heating</name>
 			<iconPath></iconPath>
 			<stuff>Heating</stuff>
 			<actions>
-				<action order="default" link="heating_20.jpg"/>
+				<action order="default" link="heating_off.jpg"/>
 				<action order="heating up" link="heating_x.jpg"/>
 				<action order="heating down" link="heating_x.jpg"/>
 			</actions>
