@@ -37,10 +37,10 @@
 				<action order="default" link="volume_2.png"/>
 			</actions>
 		</item>
-		<item id="Tv">
-			<name>Tv</name>
+		<item id="tv">
+			<name>tv</name>
 			<iconPath></iconPath>
-			<stuff>Tv</stuff>
+			<stuff>tv</stuff>
 			<actions>
 				<action order="switch on" link="tv_on.jpg"/>
 				<action order="switch off" link="tv_off.jpg"/>

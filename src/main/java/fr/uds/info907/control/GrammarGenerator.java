@@ -16,30 +16,10 @@ public class GrammarGenerator {
 				"/**\n"+
 				" * JSGF Grammar for Hello World example\n"+
 				" */\n"+
-				"grammar hello;\n");
-		/*
-		sb.append("(");
-		for(Entry<String, AbstractItem> item : items.entrySet()){
-			sb.append(item.getKey());
-			sb.append(" | ");
-		}
-		sb.setLength(sb.length()-2);
-		sb.append(") ( ");
+				"grammar hello;\n");		
 		
 		for(Entry<String, AbstractItem> item : items.entrySet()){
-			for(Entry<String, String> order : (item.getValue()).getStateIcons().entrySet()){
-				sb.append(order.getKey());
-				sb.append(" | ");
-			}
-			sb.setLength(sb.length()-2);
-		}
-		
-		sb.append(");");
-		*/
-		
-		
-		for(Entry<String, AbstractItem> item : items.entrySet()){
-			sb.append("public <"+item.getValue().getName()+"> = ( "+item.getValue().getName()+" ) ( ");
+			sb.append("public <"+item.getValue().getName()+"> = "+item.getValue().getName()+" ( ");
 			for(Entry<String, String> order : (item.getValue()).getStateIcons().entrySet()){
 				sb.append(order.getKey());
 				sb.append(" | ");

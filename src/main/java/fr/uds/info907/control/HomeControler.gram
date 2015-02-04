@@ -3,9 +3,8 @@
  * JSGF Grammar for Hello World example
  */
 grammar hello;
-public <Tv> = ( Tv ) ( default | switch on | switch off );
-public <Speaker-left> = ( Speaker-left ) ( default | middle | max | volume up | volume down | mute );
-public <Speaker-right> = ( Speaker-right ) ( default | middle | max | volume up | volume down | mute );
-public <Heating> = ( Heating ) ( default | heating down | heating up );
-public <Lamp> = ( Lamp ) ( default | switch on | switch off );
-
+public <Tv> = Tv ( default | switch on | switch off );
+public <Speaker-left> = Speaker-left ( default | middle | max | volume up | volume down | mute );
+public <Speaker-right> = Speaker-right ( default | middle | max | volume up | volume down | mute );
+public <Heating> = Heating ( default | heating down | heating up );
+public <Lamp> = Lamp ( default | switch on | switch off );

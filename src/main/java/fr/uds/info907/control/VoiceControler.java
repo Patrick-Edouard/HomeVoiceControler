@@ -1,7 +1,5 @@
 package fr.uds.info907.control;
 
-import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 
 import edu.cmu.sphinx.frontend.util.Microphone;
